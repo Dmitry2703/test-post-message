@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function test_postmessage(){
+    console.warn('FORM post message')
+    console.log(window.opener)
+    window.opener.postMessage("test" + new Date(), "*");
+    // localStorage.setItem("wp_admin_token", "test" + new Date());
+    // console.log(localStorage)
+  }
+  </script>
+
+  <a href="#" onclick="test_postmessage();return false;">post message</a>
+</body>
+</html>
