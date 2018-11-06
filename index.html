@@ -10,10 +10,9 @@
   <script>
   function test_postmessage(){
     console.warn('FORM post message')
-    console.log(window.opener)
-    window.opener.postMessage("test" + new Date(), "*");
-    // localStorage.setItem("wp_admin_token", "test" + new Date());
-    // console.log(localStorage)
+    // console.log(window.opener)
+    // window.opener.postMessage("test" + new Date(), "*");
+    localStorage.setItem("wp_admin_token", "test" + new Date());
   }
   </script>
 
